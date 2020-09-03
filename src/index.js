@@ -1,7 +1,8 @@
-const express = require('express')
+import express from 'express'
 import { makeSchema, queryType, stringArg } from '@nexus/schema'
+import { ApolloServer } from 'apollo-server-express'
 
-const { ApolloServer } = require('apollo-server-express')
+require('./db')
 
 const Query = queryType({
   definition (t) {
@@ -25,5 +26,5 @@ const app = express()
 server.applyMiddleware({ app })
 
 app.listen({ port: 4000 }, () =>
-  console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
+  console.log(`👽 Server ready at http://localhost:4000${server.graphqlPath}`)
 )
