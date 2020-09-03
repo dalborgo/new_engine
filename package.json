@@ -1,12 +1,21 @@
 {
   "name": "new_engine",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "start": "src"
+    "start": "node -r esm src"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "MDB",
+  "license": "ISC",
+  "dependencies": {
+    "@nexus/schema": "^0.15.0",
+    "apollo-server-express": "^2.17.0",
+    "body-parser": "latest",
+    "connect-couchbase": "^0.2.10",
+    "couchbase": "^3.0.5",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "ottoman": "^2.0.0-alpha.2"
+  }
 }
