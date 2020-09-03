@@ -15,7 +15,7 @@ const Query = queryType({
 const schema = makeSchema({
   types: [Query],
   outputs: {
-    schema: __dirname + '/generated/schema.graphql'
+    schema: __dirname + '/schema.graphql'
   },
 })
 
